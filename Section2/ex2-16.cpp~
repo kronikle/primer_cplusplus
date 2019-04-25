@@ -1,0 +1,25 @@
+#include <iostream>
+
+int main(){
+  int i = 0, &r1 = i;
+  double d = 0, &r2 = d;
+
+  std::cout << "i: " << i << " | r1: " << r1 << " | d: " << d << " | r2: " << r2 << std::endl;
+  
+  // (a)
+  std::cout <<  "(a) r2 = 3.14159" << std::endl;
+  r2 = 3.14159;
+  std::cout << "option (a) is valid because r2 is a reference to a double type object" << std::endl;
+
+  
+  std::cout << "\n (b) r2 = r1" << std::endl;
+  
+  r2 = r1;
+  std::cout << "option (b) is invalid because r1 and r2 have different types" << std::endl;
+
+  std::cout << "option (c) and (d) is invalid for the same reason of option (b)" << std::endl;
+
+  std::cout << "i: " << i << " | r1: " << r1 << " | d: " << d << " | r2: " << r2 << std::endl;
+  
+  return 0;
+}
