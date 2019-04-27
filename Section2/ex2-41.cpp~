@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+struct Sales_data {
+  string bookNo;
+  double price;
+  double revenue;
+};
+
+int main(){
+  return 0;
+}

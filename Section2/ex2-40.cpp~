@@ -1,0 +1,16 @@
+#include <iostream>
+
+struct Sales_data{
+  string name;
+  double price = 0.0;
+  string position;
+};
+
+
+Sales_data data1, data2;
+int main(){
+
+  data1.name = "cloe";
+  
+  return 0;
+}
