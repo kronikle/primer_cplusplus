@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main(){
+  int sum = 0;
+  vector<int> vec{10, 5, 25, 10, 15, 24};
+  for (int i = 0; i < vec.size()/2; ++i){
+    sum = vec[i] + vec[vec.size() -i];
+    cout << sum << " ";
+  }
+  return 0;
+
+}

@@ -18,6 +18,8 @@ int main(){
   vector<int> third_vector(3, 14);
   vector<string> fourth_vector(5, "hello!");
 
+  vector<int> empty_vec;
+  vector<string> input_vec;
   cout << "first vector = {";
   for (int el : first_vector){
     cout << el << " ";
@@ -28,12 +30,25 @@ int main(){
     cout << salutos << " ";
   }
   cout <<"\n";
-  /*
-  cout << first_vector << endl;
-  cout << second_vector << endl;
-  cout << third_vector << endl;
-  cout << fourth_vector << endl;
-  */
+  cout << "input some words than write stop to go on" << endl;
 
+  string input;
+  while (cin >> input && input != "stop"){
+    input_vec.push_back(input);
+  }
+
+  cout << "you insered " << input_vec.size() << " words." << endl;
+
+  for(string el : input_vec){
+    cout << el << endl;
+  }
+
+  if(empty_vec.empty()){
+    cout << "empty_vec is empty" << endl;
+  }
+  
+
+  
+  
   return 0;
 }
